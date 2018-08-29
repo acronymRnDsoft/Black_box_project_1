@@ -1,0 +1,17 @@
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\Black_Box.exe.config
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\Black_Box.exe
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\Black_Box.pdb
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\AForge.dll
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\AForge.Video.DirectShow.dll
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\AForge.Video.dll
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\AForge.xml
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\AForge.Video.xml
+c:\users\sgshk\source\repos\Black_Box\Black_Box\bin\Debug\AForge.Video.DirectShow.xml
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.csprojAssemblyReference.cache
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.BlackBox.resources
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.Properties.Resources.resources
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.csproj.GenerateResource.cache
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.csproj.CoreCompileInputs.cache
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.csproj.CopyComplete
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.exe
+c:\users\sgshk\source\repos\Black_Box\Black_Box\obj\Debug\Black_Box.pdb
