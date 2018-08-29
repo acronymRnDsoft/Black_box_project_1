@@ -10,23 +10,25 @@ using System.Windows.Forms;
 
 using AForge.Video;
 using AForge.Video.DirectShow;
+using Gma.System.MouseKeyHook;
 
 namespace Black_Box
 {
     public partial class BlackBox : Form
     {
         private FilterInfoCollection VideoDevices; //List of source video devices
-        private VideoCaptureDevice WebCamSourceDevice; //Choosen source video device4
-        private Point PreviousMousePosition;
+        private VideoCaptureDevice WebCamSourceDevice; //Choosen source video device
+
 
         public BlackBox()
         {
             InitializeComponent();
-            PreviousMousePosition = MousePosition;
         }
 
         private void BlackBox_Load(object sender, EventArgs e)
         {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
             VideoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
 
             foreach (FilterInfo device in VideoDevices)
@@ -54,21 +56,16 @@ namespace Black_Box
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            Point CurrentMousePosition = MousePosition;
-            int DeltaX = CurrentMousePosition.X - PreviousMousePosition.X;
-            int DeltaY = CurrentMousePosition.Y - PreviousMousePosition.Y;
-            if (CurrentMousePosition == PreviousMousePosition)
-            {
-                DeltaX = 0;
-                DeltaY = 0;
-            }
-
-
-
+            var ScreenBounds = Screen.PrimaryScreen.Bounds;
+            System.Windows.Forms.Cursor.Position = new Point(ScreenBounds.Right / 2, ScreenBounds.Bottom / 2);
+            int DeltaX = e.X - ScreenBounds.Right / 2;
+            int DeltaY = e.Y - ScreenBounds.Bottom / 2;
+            
             ShowDeltaX.Text = "X: " + DeltaX.ToString();
             ShowDeltaY.Text = "Y: " + DeltaY.ToString();
+            
 
-            PreviousMousePosition = MousePosition;
+            System.Windows.Forms.Cursor.Position = new Point(ScreenBounds.Right / 2, ScreenBounds.Bottom / 2);
         }
     }
 }

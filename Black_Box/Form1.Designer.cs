@@ -43,7 +43,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(95, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 443);
+            this.pictureBox1.Size = new System.Drawing.Size(1276, 751);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -80,7 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.ShowDeltaY);
             this.Controls.Add(this.ShowDeltaX);
             this.Controls.Add(this.ChooseVideoDevice);
