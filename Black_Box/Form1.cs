@@ -18,6 +18,8 @@ namespace Black_Box
     {
         private FilterInfoCollection VideoDevices; //List of source video devices
         private VideoCaptureDevice WebCamSourceDevice; //Choosen source video device
+        private Rectangle ScreenBounds = Screen.PrimaryScreen.Bounds;
+
 
 
         public BlackBox()
@@ -56,16 +58,17 @@ namespace Black_Box
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            var ScreenBounds = Screen.PrimaryScreen.Bounds;
-            System.Windows.Forms.Cursor.Position = new Point(ScreenBounds.Right / 2, ScreenBounds.Bottom / 2);
-            int DeltaX = e.X - ScreenBounds.Right / 2;
+            int MiddleX = ScreenBounds.Right / 2;
+            int MiddleY = ScreenBounds.Bottom / 2;
+            Cursor.Position = new Point(MiddleX, MiddleY);
+            int DeltaX = e.X - MiddleX;
             int DeltaY = e.Y - ScreenBounds.Bottom / 2;
             
             ShowDeltaX.Text = "X: " + DeltaX.ToString();
             ShowDeltaY.Text = "Y: " + DeltaY.ToString();
             
 
-            System.Windows.Forms.Cursor.Position = new Point(ScreenBounds.Right / 2, ScreenBounds.Bottom / 2);
+            Cursor.Position = new Point(MiddleX, MiddleY);
         }
     }
 }
