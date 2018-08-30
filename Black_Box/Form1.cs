@@ -58,17 +58,18 @@ namespace Black_Box
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
+            
             int MiddleX = ScreenBounds.Right / 2;
             int MiddleY = ScreenBounds.Bottom / 2;
             Cursor.Position = new Point(MiddleX, MiddleY);
             int DeltaX = e.X - MiddleX;
-            int DeltaY = e.Y - ScreenBounds.Bottom / 2;
+            int DeltaY = e.Y - MiddleY;
             
             ShowDeltaX.Text = "X: " + DeltaX.ToString();
             ShowDeltaY.Text = "Y: " + DeltaY.ToString();
             
 
-            Cursor.Position = new Point(MiddleX, MiddleY);
+           // Cursor.Position = new Point(MiddleX, MiddleY);
         }
     }
 }
